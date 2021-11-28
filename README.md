@@ -7,4 +7,4 @@ There are 2 reports available for this course:
 Notebooks:
 - [Vietnamese Review Preprocessing](/src/RoBERTa_Preprocessing.ipynb)
 - [RoBERTa Vietnamese](/src/RoBERTa_Sentiment.ipynb)
-- [RoBERTa English(/src/English_RoBERTa_Sentiment.ipynb)
+- [RoBERTa English](/src/English_RoBERTa_Sentiment.ipynb)
