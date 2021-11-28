@@ -113,3 +113,27 @@ accuracy/val
 recall/val
 
 I think the model itself doesn't have any significant problem other than from [here](), we can improve the accuracy by using more data with many cases like [this]().
+
+# Additional Experiment
+
+Because working with Vietnamese is much harder since the support from the internet is not as much as English, I tried to conduct another experiment but this time, I'm using RoBERTa on an English dataset. The notebook for this additional experiment is on [colab](https://colab.research.google.com/drive/1GfRwhfVeCsB9EcSHxWN4t34Ub1qgZr0R?usp=sharing) and also on my [github repo](https://github.com/duongoku/INT3405/).
+
+I followed the tutorial from [here](https://www.youtube.com/watch?v=Osj0Z6rwJB4) and [here](https://www.youtube.com/watch?v=8N-nM3QW7O0&t=776s). In the tutorial, the user used BERT and I used RoBERTa. The dataset is provided by the video's author.
+
+Dataset overview:
+
+![Review ratings](images/Untitled%203.png)
+
+Review ratings
+
+![DataFrame information](images/Untitled%204.png)
+
+DataFrame information
+
+Based on the DataFrame information, there aren't any null score value so we don't have to take null values into account. We can see that there 5 level of score, from 1 to 5. Since the number of level 3 ratings is very high and seems to equals double of other ratings level, we can't divide the sentiment into just negative and positive. The best choice is to classify the reviews into 3 categories: Negative(<3), Positive(>3) and Neutral(3).
+
+![Review sentiment](images/Untitled%205.png)
+
+Review sentiment
+
+Because of google colab's limitations, I didn't have the chance to train this model properly but I have the code I have in the notebook is totally usable.
